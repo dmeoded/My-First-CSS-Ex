@@ -11,54 +11,52 @@
     background-color: gray;
     color: white;
     text-align: left;
-
-  }
-.up-bar {   
-   border: solid blue 5px;
   }
 
   header > form {
     direction: ltr;
     text-align: left;
-
+    
+  }
+.up-bar {   
+   border: solid blue 5px;
   }
 
-  
-  .up-bar-menu {
-    /* position: relative; */
-    /* float: right; */
-    display: inline-block;
-
-
-  }
-
-  nav > ul > il {
+  nav > ul {
     list-style: none;
-    width: 10%;
-    display: inline;
-    float: right;
-  }
-
-
-  }
-  nav > li {
-    color: white;
-    padding: 10px;
-    width: 50px;
-    /* position: absolute; */
-
-    /* width: 10%; */
-
+    float: right;   
   }
   
-  nav > ul > li > a {
+  li {
+    display: inline-block;
+    float: right;
+    border-left: solid white 1px;
+
+  }
+  a {
     color: white;
     text-decoration: none;
     padding: 10px;
-    /* position: absolute; */
-    border: solid black 5px;
+    text-align: center;
 
   }
+
+
+  .up-bar-menu {
+    /* position: relative; */
+    /* float: right; */
+    float: right;
+
+  }
+
+
+  
+  /* nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: solid black 5px;
+  } */
 
   header:after {
     content: "";
