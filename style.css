@@ -15,7 +15,6 @@
   }
 .up-bar {   
    border: solid blue 5px;
-
   }
 
   header > form {
@@ -27,16 +26,18 @@
   
   .up-bar-menu {
     /* position: relative; */
+    /* float: right; */
+    display: inline-block;
 
 
   }
 
-  nav > ul {
+  nav > ul > il {
     list-style: none;
     width: 10%;
-    display: inline-block;
-
-    /* float: left; */
+    display: inline;
+    float: right;
+  }
 
 
   }
@@ -57,4 +58,10 @@
     /* position: absolute; */
     border: solid black 5px;
 
+  }
+
+  header:after {
+    content: "";
+    display: table;
+    clear: both;
   }
