@@ -10,32 +10,24 @@
   header {
     background-color: gray;
     color: white;
-    margin { 0 auto};
 }
 
-header > .up-bar  {
-  width: 70%;
+header > .upper  {
+  
   text-align: center;
-
+  width: 70%;
+  margin: 0 auto;
 }
 
-  header > form {
+  header form {
     direction: ltr;
     text-align: left;
     padding: 10px;
-    
   }
+
 .up-bar {   
    border: solid blue 5px;
   }
-
-  nav {
-    float: left;   
-    border-color: green;
-    text-align: center;
-
-  }
-
 
   nav > ul {
     list-style: none;
@@ -44,26 +36,21 @@ header > .up-bar  {
   li {
     display: inline-block;
     border-left: solid white 1px;
-
   }
+
   a {
-    color: white;
+   color: white;
     text-decoration: none;
     padding: 10px;
     text-align: center;
-
   }
-
 
   .up-bar-menu {
     /* position: relative; */
     /* float: right; */
-    float: right;
 
   }
 
-
-  
   /* nav > ul > li > a {
     color: white;
     text-decoration: none;
@@ -71,8 +58,8 @@ header > .up-bar  {
     border: solid black 5px;
   } */
 
-  header:after {
+  /* header:after {
     content: "";
     display: table;
     clear: both;
-  }
+  } */
