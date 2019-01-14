@@ -14,7 +14,7 @@
 
   }
 .up-bar {   
-   border: solid black 5px;
+   border: solid blue 5px;
 
   }
 
@@ -26,24 +26,24 @@
 
   
   .up-bar-menu {
-    position: relative;
+    /* position: relative; */
+
 
   }
 
   nav > ul {
     list-style: none;
     width: 10%;
-    float: left;
+    display: inline-block;
+
+    /* float: left; */
 
 
   }
-  nav > .up-bar-menu > ul > li {
+  nav > li {
     color: white;
     padding: 10px;
     width: 50px;
-    position: absolute;
-
-    /* display: inline; */
     /* position: absolute; */
 
     /* width: 10%; */
