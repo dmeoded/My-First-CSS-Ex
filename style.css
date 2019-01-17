@@ -13,6 +13,12 @@
     color: white;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 .bar , main {
   width: 80%;
   margin: 0 auto;
@@ -70,11 +76,34 @@
     min-height: 65px;
   }
   
+  .row2 {
+    color: black;
+  }
+  
+  .row2 .col  {
+    position: relative;
+  }
 
-  .pbody {
+  .row2  .col header {
     position: absolute;
-    bottom: 25px; 
-    right: 10px;
+    top: 5px;
+    }
+
+  .row2  .col .sub-pic {
+  position: absolute;
+  top: 30px;
+  }
+
+  .row2  .col footer {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+  }
+
+  .row1 .pbody {
+    position: absolute;
+    bottom: 5px; 
+    right: 5px;
     background-color: grey;
     color: white;
     border-radius: 0px 0px 10px 0px;
@@ -86,7 +115,7 @@
   .pheadline
   {
     font-size: 12px;
-   font-weight: bold;
+    font-weight: bold;
   } 
 
   .pfooter
