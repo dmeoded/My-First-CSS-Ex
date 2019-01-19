@@ -6,12 +6,15 @@
     padding: 0;
     font-family: 'Arial (Hebrew)', Arial;  
   }
-
   
   header, footer {
     background-color: gray;
     color: white;
 }
+
+/* header {
+  height: 105px;
+} */
 
 footer {
   position: fixed;
@@ -20,8 +23,17 @@ footer {
 }
 
 .bar , main {
+  /* width: 900px;  adjust*/
   width: 80%;
   margin: 0 auto;
+}
+
+main {
+  padding-bottom: 30px;
+}
+
+header .bar {
+  font-size: 15px;
 }
 
   header form {
@@ -31,14 +43,8 @@ footer {
   }
 
   footer .bar {
-    font-size: em1;
+    font-size: 14px;
   }
-
-  /* .home-icon {
-    width: 46px;
-    height: 44px;
-    background: url(img_navsprites.gif) 0 0;
-  } */
 
   nav > ul {
     list-style: none;
@@ -51,23 +57,30 @@ footer {
     border-right: solid white 1px;
   }
 
-  a {
-   color: white;
+
+  header a, footer a  {
+    color: white;
     text-decoration: none;
     padding: 10px;
     text-align: center;
   }
 
-
+ main .row1 a {
+      color: white;
+      text-decoration: underline;
+  }
+  
+  main .row2 a {
+    color: black;
+    text-decoration: underline;
+  }
 
   .row1 > .col, .row2 > .col {
     float: right;
-
   }
 
   .row1 > .col {
     position: relative;
-
   }
 
   .row1 > .col > img {
@@ -76,28 +89,29 @@ footer {
     min-height: 65px;
   }
   
-  .row2 {
-    color: black;
-  }
-  
-  .row2 .col  {
-    position: relative;
+  .pheadline
+  {
+    font-size: 12px;
+    font-weight: bold;
+  } 
+
+  .pfooter {
+   font-weight: underline;
+   text-align: left;
+  } 
+
+  main:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
-  .row2  .col header {
-    position: absolute;
-    top: 5px;
-    }
-
-  .row2  .col .sub-pic {
-  position: absolute;
-  top: 30px;
+  .row1 .col {
+    height: 355px;
   }
-
-  .row2  .col footer {
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
+  .row2 .col {
+    margin-top: 10px;
+    margin-left: 20px;
   }
 
   .row1 .pbody {
@@ -112,46 +126,58 @@ footer {
     margin: 15px;
   } 
 
-  .pheadline
-  {
-    font-size: 12px;
+  .row2 .col  {
+    position: relative;
+    color: black;
+
+  }
+
+  .row2  .col .hdr {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
     font-weight: bold;
-  } 
+    margin-bottom: 15px;
+    }
 
-  .pfooter
-  {
-   font-weight: underline;
-   text-align: left;
-
-  } 
-
-
-  .up-bar-menu {
-    /* position: relative; */
-    /* float: right; */
-
+  .row2  .col .sub-pic {
+  position: absolute;
+  top: 30px;
+  margin-top: 18px;
+  color: #575757;
+  height: 100px;
+  padding-right: 15px;
   }
 
-  /* nav > ul > li > a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border: solid black 5px;
-  } */
-
-  footer {
-    float: fixed;
+  .row2  .col .ftr {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
   }
 
-  main:after {
-    content: "";
-    display: table;
-    clear: both;
+
+  .row2 .ftr a {
+    margin-top: 28px;
+    padding: 30px;
+    font-size: 12px;
+  }
+
+  .row2 .sub-pic .pic3 {
+    direction: ltr;
+  }
+
+  a:hover  {
+    color: blue; /*why it' not working on the main's links */
+    text-decoration: underline;
   }
 
   .row1:after {
     content: "";
     display: table;
+    height: 0; /* why this is working? */
     clear: both;
   }
 
@@ -162,4 +188,20 @@ footer {
   }
   .cont-sue {
     color: red;
+  }
+
+  .row1-1 .cont-col {
+    display: inline-block;
+    color: blue;
+  }
+/* 
+  .row2-2 .cont-col {
+    position: relative;
+    color: blue;
+  } */
+
+  .row2-2 form {
+    float: right;
+    color: red;
+    p
   }
