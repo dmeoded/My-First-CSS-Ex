@@ -6,15 +6,21 @@
     padding: 0;
     font-family: 'Arial (Hebrew)', Arial;  
   }
+ 
+  [class^="row"]::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   
+  [class^="col"] {
+    float: right;  
+  }
+
   header, footer {
     background-color: gray;
     color: white;
 }
-
-/* header {
-  height: 105px;
-} */
 
 footer {
   position: fixed;
@@ -174,34 +180,18 @@ header .bar {
     text-decoration: underline;
   }
 
-  .row1:after {
-    content: "";
-    display: table;
-    height: 0; /* why this is working? */
-    clear: both;
-  }
-
-  .col:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .cont-sue {
-    color: red;
-  }
-
-  .row1-1 .cont-col {
+  .row1-1  {
     display: inline-block;
     color: blue;
   }
-/* 
-  .row2-2 .cont-col {
+
+  .row2-2  {
     position: relative;
-    color: blue;
-  } */
+    margin: 0 auto;
+  }
 
   .row2-2 form {
-    float: right;
     color: red;
-    p
+    position: absolute;
+    display: inline-block;
   }
