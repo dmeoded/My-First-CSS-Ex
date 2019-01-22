@@ -238,3 +238,27 @@ header .bar {
     color: white;
   }
 
+  .row2-2  > .col2 h4  {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    color: #72716d;
+  }
+  
+.row2-2 h3 {
+  color: #005ca0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.row2-2 h4 {
+  display: block;
+  color: #6d6d6d;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 5px 0;
+}
