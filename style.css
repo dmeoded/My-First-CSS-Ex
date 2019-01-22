@@ -29,8 +29,7 @@ footer {
 }
 
 .bar , main {
-  /* width: 900px;  adjust*/
-  width: 80%;
+  width: 80%; /* why it's not the same */
   margin: 0 auto;
 }
 
@@ -184,14 +183,30 @@ header .bar {
     display: inline-block;
     color: blue;
   }
-
-  .row2-2  {
+/* 
+  .row2-2 col2 {
     position: relative;
-    margin: 0 auto;
   }
 
-  .row2-2 form {
-    color: red;
+  form {
     position: absolute;
-    display: inline-block;
+
+  } */
+
+
+  [class^="row2"] .col1 {
+    width: 10%;
+  }
+
+  [class^="row2"] .col2 {
+    width: 60%;
+  }
+
+  [class^="row2"] .col3 {
+    width: 30%;
+  }
+
+  .row2-2 form, .col3 > .row {
+    background-color: lightgray; 
+    margin-top: 20px;
   }
