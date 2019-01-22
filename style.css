@@ -183,15 +183,10 @@ header .bar {
     display: inline-block;
     color: blue;
   }
-/* 
-  .row2-2 col2 {
-    position: relative;
-  }
 
-  form {
-    position: absolute;
-
-  } */
+  .form-item {
+    margin-bottom: 5px;
+  } 
 
 
   [class^="row2"] .col1 {
@@ -199,11 +194,11 @@ header .bar {
   }
 
   [class^="row2"] .col2 {
-    width: 60%;
+    margin: 20px;
   }
 
   [class^="row2"] .col3 {
-    width: 30%;
+    margin: 20px;
   }
 
 
@@ -212,6 +207,15 @@ header .bar {
     border-radius: 0px 10px 0px 0px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  .row2-2 form {
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    width: 347px;
+    min-height: 332px;
+    padding: 12px 18px;
   }
 
   .row2-1  {
@@ -248,6 +252,12 @@ header .bar {
     color: #72716d;
   }
   
+.row2-2  {
+    font-size: 13px;
+    padding: 5px;
+
+  }
+
 .row2-2 h3 {
   color: #005ca0;
   font-weight: bold;
@@ -257,8 +267,43 @@ header .bar {
 .row2-2 h4 {
   display: block;
   color: #6d6d6d;
-  font-size: 13px;
   font-weight: bold;
   line-height: 1.2;
   margin: 5px 0;
+}
+
+.row2-2 p {
+  color: #6d6d6d;
+  line-height: 1.2;
+  margin: 5px 0;
+}
+
+.row2-2 p, .row2-2 a {
+  line-height: 1.2;
+}
+
+.row2-2  .col3 .row {
+width: 248px;
+height: 142px;
+padding: 18px 22px 15px;
+}
+
+label {
+  width: 100px;
+  display: inline-block;
+}
+
+.font-item {  /*why I cannot center it and how can I make it the same length (only by px?)?*/
+color: #6d6d6d;
+    width: 235px;
+    height: 100px;
+    padding: 3px;
+    border: 1px solid #808992; 
+}
+
+.btn {
+  direction: ltr; /*why its not working */
+  background-color: blue;
+  text-align: left;
+  color: white;
 }
