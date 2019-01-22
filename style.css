@@ -206,7 +206,35 @@ header .bar {
     width: 30%;
   }
 
+
   .row2-2 form, .col3 > .row {
     background-color: lightgray; 
+    border-radius: 0px 10px 0px 0px;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
+
+  .row2-1  {
+    line-height: 32px;
+    color: #5c5c5c;
+  }
+
+  .row2-1  > .col1 > a {
+    font-size: 13px;
+    background-color: lightgray;
+    margin-bottom: 4px;
+    text-decoration: none;
+  }
+
+  .row2-1  > .col2  {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .row2-1  > .col2 > a {
+    text-decoration: none;
+  }
+  
+  .row2-2  > .col1 {
+    color: white;
+  }
+
